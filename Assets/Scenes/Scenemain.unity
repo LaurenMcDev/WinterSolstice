@@ -491,7 +491,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff6f6627caeae154bb0d5820d8ed5ff2, type: 2}
+  - {fileID: 2100000, guid: c0e32bd83a4981a428efbdad4720ceb9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34181,6 +34181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8413155065097018949, guid: 0057d1bc1165f0449afe8be7d8a73040, type: 3}
   water: {fileID: 4289123910281883410, guid: b1771405e204fba4fa1e4cba9ffa0d98, type: 3}
+  Crop: {fileID: 6316922517275265417, guid: f900cf0a2646a524a80a1be690aff10c, type: 3}
 --- !u!4 &1481079756
 Transform:
   m_ObjectHideFlags: 0

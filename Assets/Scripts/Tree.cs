@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Tree : MonoBehaviour
@@ -47,9 +48,9 @@ public class Tree : MonoBehaviour
             // animator.SetTrigger("chopping");
             chop.Play();
             Instantiate(myPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 2, 0), Quaternion.identity);
+            Destroy(eKeyUI);
             Destroy(this.gameObject);
         }
-       
     }
 }
 
