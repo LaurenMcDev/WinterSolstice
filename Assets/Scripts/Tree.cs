@@ -53,9 +53,9 @@ public class Tree : MonoBehaviour
             chop.Play();
             Instantiate(myPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 2, 0), Quaternion.identity);
             logCount++;
-            logs.text = "Logs: " + logCount;
+           // logs.text = "Logs: " + logCount;
            // Destroy(eKeyUI);
-           Destroy(this.gameObject);
+          // Destroy(this.gameObject);
         }
     }
 }
