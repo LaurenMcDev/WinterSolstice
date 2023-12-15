@@ -10,7 +10,7 @@ public class DirtPatch : MonoBehaviour
     public GameObject myPrefab;
     public GameObject water;
     public GameObject Crop;
-    bool watered = false;
+  //  bool watered = false;
 
     private void Start()
     {
@@ -55,7 +55,7 @@ public class DirtPatch : MonoBehaviour
 
         // Change the sprite
         Instantiate(water, new Vector3(this.transform.position.x, this.transform.position.y, 0), Quaternion.identity);
-        watered = true;
+        //watered = true;
     }
 }
 

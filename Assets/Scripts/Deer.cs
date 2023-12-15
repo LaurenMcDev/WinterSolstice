@@ -17,22 +17,23 @@ public class Deer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(moveRight && transform.position.x > right.position.x)
-        {
-            moveRight = false;
-        }
-        if(!moveRight && transform.position.x < left.position.x)
-        {
-            moveRight = true;
-        }
+        /*  if(moveRight && transform.position.x > right.position.x)
+          {
+              moveRight = false;
+          }
+          if(!moveRight && transform.position.x < left.position.x)
+          {
+              moveRight = true;
+          }
 
-        if(moveRight)
-        {
-            rb.velocity = new Vector3(moveSpeed, rb.velocity.y, 0f);
-        }
-        else
-        {
-            rb.velocity = new Vector3(-moveSpeed, rb.velocity.y, 0f);
-        }
+          if(moveRight)
+          {
+              rb.velocity = new Vector3(moveSpeed, rb.velocity.y, 0f);
+          }
+          else
+          {
+              rb.velocity = new Vector3(-moveSpeed, rb.velocity.y, 0f);
+          }
+      } */
     }
 }

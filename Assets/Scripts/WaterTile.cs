@@ -17,7 +17,7 @@ public class WaterTile : MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter(Collider2D collision)
+   /* private void (Collider2D collision)
     {
         if (collision.CompareTag("player") && Input.GetKeyDown(KeyCode.E))
         {
@@ -26,7 +26,7 @@ public class WaterTile : MonoBehaviour
                 WaterCrop();
             }
         }
-    }
+    } */
 
     private void WaterCrop()
     {
