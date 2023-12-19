@@ -1342,6 +1342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenemain: Scenemain
+  sceneplay: Story
+  scenecontrols: 
 --- !u!1 &2132501627
 GameObject:
   m_ObjectHideFlags: 0

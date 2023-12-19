@@ -20,7 +20,7 @@ public class Collectable : MonoBehaviour
     {
       //  bool playerDir = Input.GetKey(KeyCode.E);
         Player player = collision.GetComponent<Player>();
-        if (collision.tag == "player")
+        if (collision.tag == "player" && Input.GetKeyDown(KeyCode.E))
         {
                 player.inventory.Add(this);
                 Destroy(this.gameObject);
