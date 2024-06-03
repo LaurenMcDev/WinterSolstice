@@ -1,3 +1,4 @@
+using Mono.Cecil;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,6 @@ public class Camera : MonoBehaviour
     public Vector3 offset;
     public Vector3 targetpos;
     public float smoothing;
-
 
     [SerializeField] private Transform target;
 
@@ -21,8 +21,14 @@ public class Camera : MonoBehaviour
 
         transform.position = target.position + offset;
 
+
         //targetpos = new Vector3(player.transform.position.x + offset.x, player.transform.position.y + offset.y, player.transform.position.z + offset.z);
 
+
         //transform.position = Vector3.Lerp(transform.position, targetpos, smoothing * Time.deltaTime);
+
+  
     }
+
+
 }

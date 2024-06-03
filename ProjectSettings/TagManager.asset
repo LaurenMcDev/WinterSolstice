@@ -43,12 +43,36 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground1
+    uniqueID: 2610576887
+    locked: 0
+  - name: Ground2
+    uniqueID: 2803068405
+    locked: 0
+  - name: Ground3
+    uniqueID: 2112119531
+    locked: 0
+  - name: Decor1
+    uniqueID: 3051488325
+    locked: 0
+  - name: Decor2
+    uniqueID: 4074429427
+    locked: 0
   - name: Nature
     uniqueID: 114378111
     locked: 0
   - name: Player
     uniqueID: 271023173
     locked: 0
-  - name: water
-    uniqueID: 2610576887
+  - name: Instances
+    uniqueID: 378608751
+    locked: 0
+  - name: Front1
+    uniqueID: 975506101
+    locked: 0
+  - name: Front2
+    uniqueID: 1424996043
+    locked: 0
+  - name: Collisions
+    uniqueID: 2142913007
     locked: 0

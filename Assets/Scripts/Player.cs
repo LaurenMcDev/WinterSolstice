@@ -4,6 +4,7 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using Unity.VisualScripting;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class Player : Singleton<Player>
 {
@@ -24,11 +25,15 @@ public class Player : Singleton<Player>
     public Animator animator;
     public string animationTrigger = "AnimationTrigger";
 
+    private Camera mainCamera;
+
     protected override void Awake()
     {
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
         inventory = new Inventory(12);
+
+        mainCamera = GetComponent<Camera>();
     }
 
     public void Drop(Collectable item)
@@ -93,5 +98,11 @@ public class Player : Singleton<Player>
         }
 
     }
+  /*  public Vector3 GetPlayerViewportPosition()
+    {
+        return mainCamera.transform.position;
+        Camera camera = GetComponent<Camera>();
+      //  Vector3 p = camera.ViewportToWorldPoint(new Vector3(1, 1, camera.nearClipPlane));
 
+    } */
 }

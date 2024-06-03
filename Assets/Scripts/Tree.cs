@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,7 +8,10 @@ using UnityEngine;
 public class Tree : MonoBehaviour
 {
     public GameObject myPrefab;
-    public GameObject eKeyUI;
+    public EEKey eKeyUI;
+    public GameObject tree;
+
+    public bool cut = false;
 
     public TextMeshPro logs;
     public int logCount;
@@ -33,15 +37,15 @@ public class Tree : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+   private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "player")
         {
             collide = true;
-            Instantiate(eKeyUI, new Vector3(this.transform.position.x, this.transform.position.y - 1, 0), Quaternion.identity);
+            //Instantiate(eKeyUI, new Vector3(this.transform.position.x, this.transform.position.y - 1, 0), Quaternion.identity);
             Debug.Log("collision");
         }
-    }
+    } 
 
 
     private void ChoppingAction()
@@ -53,12 +57,31 @@ public class Tree : MonoBehaviour
             chop.Play();
             Instantiate(myPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 2, 0), Quaternion.identity);
             logCount++;
-           // logs.text = "Logs: " + logCount;
-           // Destroy(eKeyUI);
-          // Destroy(this.gameObject);
+            cut = true;
+
+            if(cut == true)
+            {
+                Chopped();
+               // getRid();
+            }
         }
     }
+
+  public void getRid()
+    {
+      //  eKeyUI.DestroyE();
+        //  Destroy(eKeyUI);
+        // Chopped();
+    }    
+    private void Chopped()
+    {
+        //  eKeyUI.DestroyE();
+        Destroy(this.gameObject);
+        eKeyUI.DestroyE();
+        logs.text = "Logs: " + logCount;
+    }
 }
+
 
     /* private void OnTriggerEnter2D(Collider2D collision)
      {

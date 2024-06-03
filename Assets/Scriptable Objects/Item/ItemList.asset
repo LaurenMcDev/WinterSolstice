@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940025d60b2236249b406de098e8f86a, type: 3}
+  m_Name: ItemList
+  m_EditorClassIdentifier: 
+  itemDetails:
+  - itemCode: 10000
+    itemType: 0
+    itemSprite: {fileID: 21300000, guid: b5f7873ebbd2f7f40a5a1f493449adee, type: 3}
+    itemDesc: A small seed, what does it grow?
+    itemGridRadius: 2
+    itemUseRadius: 0
+    startItem: 0
+    pickUp: 1
+    drop: 1
+    eaten: 0
+    carried: 1
+  - itemCode: 10001
+    itemType: 1
+    itemSprite: {fileID: 21300000, guid: bdb14162c3bffa945a435466e04efb06, type: 3}
+    itemDesc: A large, heavy pumpkin.
+    itemGridRadius: 2
+    itemUseRadius: 0
+    startItem: 0
+    pickUp: 1
+    drop: 1
+    eaten: 1
+    carried: 1
+  - itemCode: 10002
+    itemType: 2
+    itemSprite: {fileID: 21300000, guid: cdb0ece703ae5b147a3b76cf2aaf3354, type: 3}
+    itemDesc: A wateing can to water crops.
+    itemGridRadius: 1
+    itemUseRadius: 0
+    startItem: 1
+    pickUp: 1
+    drop: 0
+    eaten: 0
+    carried: 0
+  - itemCode: 10003
+    itemType: 3
+    itemSprite: {fileID: 21300000, guid: 1ae12a3732b94a1429f58dff9608f7a4, type: 3}
+    itemDesc: A hoe for the ground.
+    itemGridRadius: 1
+    itemUseRadius: 0
+    startItem: 1
+    pickUp: 1
+    drop: 0
+    eaten: 0
+    carried: 0
+  - itemCode: 10004
+    itemType: 4
+    itemSprite: {fileID: 21300000, guid: 2b6739d69a9972046942f1e4f6efbbdc, type: 3}
+    itemDesc: An axe for chopping trees.
+    itemGridRadius: 1
+    itemUseRadius: 0
+    startItem: 1
+    pickUp: 1
+    drop: 0
+    eaten: 0
+    carried: 0
+  - itemCode: 10005
+    itemType: 1
+    itemSprite: {fileID: 21300000, guid: 2fe8b9004fe29d24faecf64105c67774, type: 3}
+    itemDesc: A log dropped from a tree.
+    itemGridRadius: 2
+    itemUseRadius: 0
+    startItem: 0
+    pickUp: 1
+    drop: 1
+    eaten: 0
+    carried: 1
+  - itemCode: 10006
+    itemType: 7
+    itemSprite: {fileID: 21300000, guid: f8c70b38b06a8934d80ad1c6413382db, type: 3}
+    itemDesc: A small basket for collecting.
+    itemGridRadius: 1
+    itemUseRadius: 0
+    startItem: 1
+    pickUp: 1
+    drop: 0
+    eaten: 0
+    carried: 0
+  - itemCode: 10007
+    itemType: 5
+    itemSprite: {fileID: 21300000, guid: 83cee1fefe1297d4d822b905b2e9d0c6, type: 3}
+    itemDesc: A pickaxe for breaking things.
+    itemGridRadius: 0
+    itemUseRadius: 0
+    startItem: 1
+    pickUp: 1
+    drop: 0
+    eaten: 0
+    carried: 0
+  - itemCode: 10008
+    itemType: 0
+    itemSprite: {fileID: 21300000, guid: 0375fc6e98774a347b8e07f83780c3f0, type: 3}
+    itemDesc: Stone seed
+    itemGridRadius: 0
+    itemUseRadius: 0
+    startItem: 0
+    pickUp: 0
+    drop: 0
+    eaten: 0
+    carried: 0
+  - itemCode: 10009
+    itemType: 1
+    itemSprite: {fileID: 21300000, guid: bb5928076a44f30419b8db406ff69086, type: 3}
+    itemDesc: 
+    itemGridRadius: 1
+    itemUseRadius: 0
+    startItem: 0
+    pickUp: 1
+    drop: 1
+    eaten: 0
+    carried: 1
+  - itemCode: 10010
+    itemType: 6
+    itemSprite: {fileID: 21300000, guid: f81f68b128b84594b94ed72d0dea7b1b, type: 3}
+    itemDesc: Scythe for reaping.
+    itemGridRadius: 2
+    itemUseRadius: 1.5
+    startItem: 1
+    pickUp: 1
+    drop: 0
+    eaten: 0
+    carried: 1
+  - itemCode: 10011
+    itemType: 8
+    itemSprite: {fileID: 21300000, guid: 73ebd12000c0c2b449fa056cc3288fd4, type: 3}
+    itemDesc: Grass tuft.
+    itemGridRadius: 0
+    itemUseRadius: 0
+    startItem: 0
+    pickUp: 0
+    drop: 0
+    eaten: 0
+    carried: 0
