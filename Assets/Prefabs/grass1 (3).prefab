@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8888688784717983033}
   - component: {fileID: 8888688784717983014}
-  - component: {fileID: 8888688784717983035}
+  - component: {fileID: 150343758126227783}
+  - component: {fileID: 5449776954827461619}
   - component: {fileID: 8888688784717983032}
   m_Layer: 0
   m_Name: grass1 (3)
@@ -32,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8888688784717983014
 SpriteRenderer:
@@ -86,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8888688784717983035
+--- !u!114 &150343758126227783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,6 +103,19 @@ MonoBehaviour:
   eKeyUI: {fileID: 0}
   pickUp: 0
   coll: 0
+--- !u!114 &5449776954827461619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8888688784717983015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43622bd61dd452046bc75149990c94fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemCode1: 10011
 --- !u!61 &8888688784717983032
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryManager : Singleton<InventoryManager> 
+public class InventoryManager : SingletonMonobehaviour<InventoryManager> 
 {
     private Dictionary<int, ItemDetails> itemDetailsDictionary;
 
@@ -12,8 +12,9 @@ public class InventoryManager : Singleton<InventoryManager>
     [SerializeField] private ItemList itemList = null;
     public Item item;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         CreateInventoryLists();
         CreateItemDetailsDictionary();
     }
