@@ -12,8 +12,9 @@ public class InventoryManager : Singleton<InventoryManager>
     [SerializeField] private ItemList itemList = null;
     public Item item;
 
-    private void Awake()
+    protected override void Awake() 
     {
+        base.Awake();
         CreateInventoryLists();
         CreateItemDetailsDictionary();
     }
@@ -104,7 +105,8 @@ public class InventoryManager : Singleton<InventoryManager>
         if(itemDetailsDictionary.TryGetValue(itemCode, out itemDetails))
         {
             return itemDetails;
-        } else
+        } 
+        else
         {
             return null;
         }

@@ -19,6 +19,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         if (instance == null)
         {
             instance = this as T;
+            Debug.Log("InventoryManager instance initialized.");
         }
         else
         {

@@ -6,14 +6,16 @@ public class itemPickUp : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Item item = collision.GetComponent<Item>();
-        if(item != null)
+        if (item != null)
         {
-            ItemDetails itemDetails = InventoryManager.Instance.GetItemDetails(itemCode: item.itemCode);
+            Debug.Log("Item != null");
+            Debug.Log(collision.name);
+            ItemDetails itemDetails = InventoryManager.Instance.GetItemDetails(item.itemCode);
 
-            if (itemDetails.pickUp == true) ;
+            if (itemDetails.pickUp == true)
             {
                 InventoryManager.Instance.AddItem(InventoryLocation.player, item, collision.gameObject);
             }
-        }    
+        }
     }
 }
