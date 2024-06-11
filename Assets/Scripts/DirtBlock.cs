@@ -10,17 +10,33 @@ public class DirtBlock : MonoBehaviour
 
     void Start()
     {
-        seed = GetComponent<GameObject>();
+     
     }
 
     private void Update()
     {
-        if(seedplant == true)
+
+        if(Input.GetKeyDown(KeyCode.E))
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Instantiate(seed, new Vector3(this.transform.position.x, this.transform.position.y), Quaternion.identity);
-            }
+            Debug.Log("E key pressed");
+            PlantSeed();
+        }
+        /*  if(seedplant == true)
+          {
+              if (Input.GetKeyDown(KeyCode.E))
+              {
+                  Instantiate(seed, new Vector3(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+              }
+          } */
+    }
+
+
+    private void PlantSeed()
+    {
+        if (seedplant == true)
+        {
+            Debug.Log("Chopping");
+           Instantiate(seed, new Vector3(this.transform.position.x, this.transform.position.y), Quaternion.identity);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,5 +48,6 @@ public class DirtBlock : MonoBehaviour
   
         }
     }
-    // Update is called once per frame
+
+  
 }
