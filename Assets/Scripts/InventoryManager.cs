@@ -20,13 +20,12 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
     {
         base.Awake();
 
-        // Create Inventory Lists
+
         CreateInventoryLists();
 
-        // Create item details dictionary
         CreateItemDetailsDictionary();
 
-        // Initailise selected inventory item array
+      
         selectedInventoryItem = new int[(int)InventoryLocation.count];
 
         for (int i = 0; i < selectedInventoryItem.Length; i++)
@@ -224,57 +223,6 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
     private int GetSelectedInventoryItem(InventoryLocation inventoryLocation)
     {
         return selectedInventoryItem[(int)inventoryLocation];
-    }
-
-
-
-
-
-    /* public string GetItemTypeDescription(ItemType itemType)
-     {
-         string itemTypeDescription;
-         switch (itemType)
-         {
-             case ItemType.Breaking_tool:
-                 itemTypeDescription = Settings.BreakingTool;
-                 break;
-
-             case ItemType.Chopping_tool:
-                 itemTypeDescription = Settings.ChoppingTool;
-                 break;
-
-             case ItemType.Hoeing_tool:
-                 itemTypeDescription = Settings.HoeingTool;
-                 break;
-
-             case ItemType.Reaping_tool:
-                 itemTypeDescription = Settings.ReapingTool;
-                 break;
-
-             case ItemType.Watering_tool:
-                 itemTypeDescription = Settings.WateringTool;
-                 break;
-
-             case ItemType.Collecting_tool:
-                 itemTypeDescription = Settings.CollectingTool;
-                 break;
-
-             default:
-                 itemTypeDescription = itemType.ToString();
-                 break;
-         }
-
-         return itemTypeDescription;
-     } */
-
-    public void ISaveableRegister()
-    {
-
-    }
-
-    public void ISaveableDeregister()
-    {
-
     }
 
 
